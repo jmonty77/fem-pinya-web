@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fem-pinya · el joc de colles castelleres</title>
+<meta name="description" content="fem-pinya és un joc multijugador en què fas de cap de colla castellera: mantens el local, entrenes un castell durant la setmana i l'aixeques a la plaça.">
+<style>
+  :root{
+    --paper:#f3e6cf;--paper-2:#e7d3b0;--ink:#241910;--red:#b4232c;--red-deep:#7c1420;--gold:#e0b03a;
+    --serif:"Fraunces","Iowan Old Style",Palatino,Georgia,serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);
+    background:
+      radial-gradient(1200px 500px at 50% -10%, #fff7ea 0%, transparent 60%),
+      var(--paper);
+    line-height:1.55;min-height:100vh;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px;}
+  header{text-align:center;padding:72px 20px 36px;}
+  .badge{display:inline-block;background:var(--red);color:var(--gold);border:2px solid var(--gold);
+    border-radius:999px;padding:5px 16px;font-weight:700;letter-spacing:1px;font-size:13px;text-transform:uppercase;}
+  h1{font-family:var(--serif);font-size:clamp(44px,9vw,84px);color:var(--red-deep);margin:18px 0 6px;line-height:1;}
+  .tagline{font-size:clamp(17px,2.4vw,22px);color:#5a4631;max-width:620px;margin:0 auto;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:30px;background:var(--red);color:#fff;
+    text-decoration:none;font-weight:700;font-size:19px;padding:15px 30px;border-radius:12px;
+    border:2px solid var(--red-deep);box-shadow:0 6px 0 var(--red-deep);transition:transform .08s, box-shadow .08s;}
+  .cta:hover{transform:translateY(2px);box-shadow:0 4px 0 var(--red-deep);}
+  .cta small{font-weight:500;opacity:.9;}
+  .sub-cta{display:block;margin-top:12px;color:#7a6240;font-size:14px;}
+  section{padding:30px 0;}
+  h2{font-family:var(--serif);color:var(--red-deep);font-size:clamp(26px,4vw,34px);text-align:center;margin-bottom:8px;}
+  .lead{text-align:center;color:#5a4631;max-width:640px;margin:0 auto 26px;}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .step{background:#fffaf2;border:2px solid var(--ink);border-radius:14px;padding:18px 16px;text-align:center;}
+  .step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;
+    background:var(--gold);color:var(--ink);font-family:var(--serif);font-weight:700;font-size:18px;margin-bottom:8px;}
+  .step h3{font-family:var(--serif);font-size:19px;margin-bottom:4px;}
+  .step p{font-size:14px;color:#5a4631;}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;}
+  .card{background:#fffaf2;border:2px solid var(--ink);border-radius:14px;padding:20px;}
+  .card h3{font-family:var(--serif);font-size:20px;color:var(--red-deep);margin-bottom:6px;}
+  .card p{font-size:15px;color:#4a3a28;}
+  .final{text-align:center;padding:48px 20px 24px;}
+  footer{text-align:center;color:#7a6240;font-size:13px;padding:30px 20px 50px;border-top:1px solid #d8c6a6;margin-top:20px;}
+  footer a{color:var(--red);}
+  @media(max-width:720px){.steps{grid-template-columns:1fr 1fr;}.cards{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Joc multijugador</span>
+    <h1>fem&#8209;pinya</h1>
+    <p class="tagline">Fes de cap de colla castellera: cuida el local, entrena un castell durant la setmana i aixeca'l a la plaça.</p>
+    <a class="cta" href="https://fem-pinya.onrender.com"><span>Juga ara</span><small>&rarr;</small></a>
+    <span class="sub-cta">S'obre a fem-pinya.onrender.com · gratis, sense instal·lar res</span>
+  </header>
+
+  <section>
+    <h2>Què és?</h2>
+    <p class="lead">Un joc en línia sobre el món casteller. Dirigeixes una colla al llarg d'una temporada de cinc setmanes, amb quatre diades i un concurs final. La colla amb més punts guanya.</p>
+    <div class="cards">
+      <div class="card"><h3>🏛️ Cuida el local</h3><p>Repara la teulada, recluta samarretes o descansa els cossos. Un local en forma et dona un segon assaig.</p></div>
+      <div class="card"><h3>🧱 Entrena i decideix</h3><p>Treballa el domini dels castells, tria la plaça i munta el programa de la ronda. No pots fer-ho tot: cal prioritzar.</p></div>
+      <div class="card"><h3>🤝 Competeix en temps real</h3><p>Crea una sala o uneix-te a una d'existent i juga amb altres colles alhora. També pots jugar contra colles de la màquina.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Com funciona una setmana</h2>
+    <p class="lead">Cada setmana segueix sempre el mateix ritme.</p>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h3>Local</h3><p>Prepara la colla amb les feines de la setmana.</p></div>
+      <div class="step"><span class="n">2</span><h3>Assaig</h3><p>Entrena els castells per guanyar domini.</p></div>
+      <div class="step"><span class="n">3</span><h3>Ronda</h3><p>Tria la plaça i ordena què aixecaràs.</p></div>
+      <div class="step"><span class="n">4</span><h3>Diada</h3><p>Mira com la colla aixeca els castells a plaça.</p></div>
+    </div>
+  </section>
+
+  <div class="final">
+    <h2>A punt per fer pinya?</h2>
+    <p class="lead">Entra, crea una colla i puja ben amunt.</p>
+    <a class="cta" href="https://fem-pinya.onrender.com"><span>Entra al joc</span><small>&rarr;</small></a>
+  </div>
+
+  <footer>
+    fem-pinya · un joc sobre colles castelleres · <a href="https://fem-pinya.onrender.com">fem-pinya.onrender.com</a>
+  </footer>
+</div>
+</body>
+</html>
